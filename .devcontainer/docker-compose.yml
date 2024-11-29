@@ -6,7 +6,7 @@ networks:
 
 services:
   frontend:
-    image: "ghcr.io/ds-hw-fuuzen/hw2-frontend:master"
+    image: "ghcr.io/ds-hw-fuuzen/hw3-frontend:master"
     environment:
       - BK_LOGIN_URL=https://ce.bktencent.com/login/
       - BK_APP_HOST=dev.ce.bktencent.com
