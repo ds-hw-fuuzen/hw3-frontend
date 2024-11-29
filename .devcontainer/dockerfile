@@ -1,4 +1,4 @@
-FROM node:20.10.0-slim
+FROM node:14.16.1-slim
 
 WORKDIR /app
 
@@ -8,7 +8,6 @@ RUN apt-get update && \
     apt-get install -y fish git && \
     rm -rf /var/lib/apt/lists/* && \
     sed -i 's|/bin/bash|/usr/bin/fish|g' /etc/passwd && \
-    npm install -g npm@6 && \
     npm install && \
     npm cache clean --force
 
