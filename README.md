@@ -16,4 +16,4 @@ docker network create hw3_bridge
 
 当需要对接的时候，请打开两个 VSCode 窗口，分别在开发容器中打开项目目录，分别运行程序即可。
 
-:warning 注意！本仓库镜像基于 Debian 9，目前已不被 VSCode 支持，VSCode 会弹出相应的警告，但目前不影响开发。
+:warning: 注意！本仓库镜像基于 Debian 9，目前已不被 VSCode 支持，VSCode 会弹出相应的警告，但目前不影响开发。
