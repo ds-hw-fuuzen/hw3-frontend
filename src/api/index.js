@@ -233,7 +233,8 @@ export default http;
  * 向 http header 注入 CSRFToken，CSRFToken key 值与后端一起协商制定
  */
 export function injectCSRFTokenToHeaders () {
-    const CSRFToken = cookie.parse(document.cookie)[`${window.BKPAAS_APP_ID}_csrftoken`];
+    // const CSRFToken = cookie.parse(document.cookie)[`${window.BKPAAS_APP_ID}_csrftoken`];
+    const CSRFToken = cookie.parse(document.cookie)[`csrftoken`];
     if (CSRFToken !== undefined) {
         axiosInstance.defaults.headers.common['X-CSRFToken'] = CSRFToken;
     } else {
